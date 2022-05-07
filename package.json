@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "An activity graph to show you github activities (or contribution)",
   "main": "main.ts",
+  "engines": {
+    "node": "14"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    ".next/cache"
+  ],
   "scripts": {
     "start": "nodemon src/main.ts",
     "test": "jest",
     "coverage": "npm test -- --coverage",
     "lint": "eslint \"{src,styles,types,interfaces,__test__}/**/*.ts\" --fix",
-    "format": "prettier --write \"src/**/*.ts\" \"__test__/**/*.ts\" \"interfaces/**/*.ts\" \"styles/**/*.ts\" \"types/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\" \"__test__/**/*.ts\" \"interfaces/**/*.ts\" \"styles/**/*.ts\" \"types/**/*.ts\"",
+    "deploy": "git add . && git commit -m Build && git push"
   },
   "repository": {
     "type": "git",

@@ -1,3 +1,43 @@
+# github-readme-activity-graph
+
+# 🚀 Javascript full-stack 🚀
+
+https://github.com/coding-to-music/github-readme-activity-graph
+
+https://github-readme-activity-graph.vercel.app
+
+by Ashutosh Dwivedi https://github.com/Ashutosh00710
+
+https://ashutosh00710.github.io/github-readme-activity-graph/
+
+https://github.com/Ashutosh00710/github-readme-activity-graph		
+
+
+## Environment Values
+
+```java
+            url: 'https://api.github.com/graphql',
+            method: 'POST',
+            headers: {
+                Authorization: `bearer ${process.env.TOKEN}`,
+            },
+            data: graphQLQuery,
+
+```
+
+## GitHub
+
+```java
+git init
+git add .
+git remote remove origin
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:coding-to-music/github-readme-activity-graph.git
+git push -u origin main
+vercel --prod --confirm 
+```
+
 <p align="center">
     <img src="asset/logo.svg" height="150">
 </p>
